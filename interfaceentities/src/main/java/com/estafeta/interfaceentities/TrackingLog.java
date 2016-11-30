@@ -1,6 +1,7 @@
 package com.estafeta.interfaceentities;
 
 import java.io.Serializable;
+import java.util.Date;
 
 public class TrackingLog implements Serializable{
 	private Integer systemId;
@@ -8,7 +9,7 @@ public class TrackingLog implements Serializable{
 	private String version;
 	private String ip;
 	private String user;
-	private String eventDate;
+	private Date eventDate;
 	private String processID;
 	
 	public Integer getSystemId() {
@@ -41,10 +42,10 @@ public class TrackingLog implements Serializable{
 	public void setUser(String user) {
 		this.user = user;
 	}
-	public String getEventDate() {
+	public Date getEventDate() {
 		return eventDate;
 	}
-	public void setEventDate(String eventDate) {
+	public void setEventDate(Date eventDate) {
 		this.eventDate = eventDate;
 	}
 	public String getProcessID() {

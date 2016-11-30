@@ -2,9 +2,16 @@ package com.estafeta.interfaceentities;
 
 import java.io.Serializable;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class StatusResponse implements Serializable {
+	@XmlElement
 	private String code;
+	@XmlElement
 	private String errorCode;
+	@XmlElement
 	private String errorDescription;
 	public String getCode() {
 		return code;

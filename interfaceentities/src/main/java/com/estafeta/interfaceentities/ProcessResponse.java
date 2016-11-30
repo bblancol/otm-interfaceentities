@@ -3,17 +3,29 @@ package com.estafeta.interfaceentities;
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 
+@XmlRootElement
 public class ProcessResponse implements Serializable {
 
+	@XmlElement
 	private String processID;
+	@XmlElement
 	private int dispatchNumber;
+	@XmlElement
 	private String businessCode;
+	@XmlElement
 	private Date processDate;
+	@XmlElement
 	private String destinationSystem;
+	@XmlElement
 	private String destinationSystemVersion;
+	@XmlElement
 	private String transmissionNumber;
+	@XmlElement
 	private boolean isFinalResponse;
+	@XmlElement
 	private StatusResponse statusResponse;
 	
 	
