@@ -8,6 +8,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class StatusResponse implements Serializable {
 	@XmlElement
+	private Integer id;
+	@XmlElement
 	private String code;
 	@XmlElement
 	private String errorCode;
