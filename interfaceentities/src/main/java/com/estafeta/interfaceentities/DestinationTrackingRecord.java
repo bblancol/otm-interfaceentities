@@ -8,7 +8,7 @@ public class DestinationTrackingRecord implements Serializable{
 	private Integer requestId;
 	private Integer deliveryNumber;
 	private String businessNumber;
-	private String destinationSystem;
+	private System destinationSystem;
 	private Date responseDate;
 	private StatusResponse statusResponse;
 	private Integer transmissionNumber;
@@ -42,10 +42,10 @@ public class DestinationTrackingRecord implements Serializable{
 	public void setBusinessNumber(String businessNumber) {
 		this.businessNumber = businessNumber;
 	}
-	public String getDestinationSystem() {
+	public System getDestinationSystem() {
 		return destinationSystem;
 	}
-	public void setDestinationSystem(String destinationSystem) {
+	public void setDestinationSystem(System destinationSystem) {
 		this.destinationSystem = destinationSystem;
 	}
 	public Date getResponseDate() {
@@ -102,6 +102,5 @@ public class DestinationTrackingRecord implements Serializable{
 	public void setUpdateDate(Date updateDate) {
 		this.updateDate = updateDate;
 	}
-	
 	
 }

@@ -7,14 +7,14 @@ public class TrackingRecord implements Serializable{
 	private Integer requestId;
 	private Integer deliveryNumber;
 	private String businessNumber;
-	private String sourceSystem;
+	private System sourceSystem;
 	private String operationExecuted;
 	private StatusResponse statusResponse;
 	private Integer destinationClientNumber;
 	private Integer numberOfResponses;
 	private Integer numberOfErrors;
 	private Integer numberOfPendingResponses;
-	private Integer userId;
+	private User user;
 	private String ip;
 	private Date registerDate;
 	private Date updateDate;
@@ -36,10 +36,10 @@ public class TrackingRecord implements Serializable{
 	public void setBusinessNumber(String businessNumber) {
 		this.businessNumber = businessNumber;
 	}
-	public String getSourceSystem() {
+	public System getSourceSystem() {
 		return sourceSystem;
 	}
-	public void setSourceSystem(String sourceSystem) {
+	public void setSourceSystem(System sourceSystem) {
 		this.sourceSystem = sourceSystem;
 	}
 	public String getOperationExecuted() {
@@ -78,11 +78,11 @@ public class TrackingRecord implements Serializable{
 	public void setNumberOfPendingResponses(Integer numberOfPendingResponses) {
 		this.numberOfPendingResponses = numberOfPendingResponses;
 	}
-	public Integer getUserId() {
-		return userId;
+	public User getUser() {
+		return user;
 	}
-	public void setUserId(Integer userId) {
-		this.userId = userId;
+	public void setUser(User user) {
+		this.user = user;
 	}
 	public String getIp() {
 		return ip;
